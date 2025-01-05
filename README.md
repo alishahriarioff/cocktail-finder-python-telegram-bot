@@ -6,6 +6,8 @@
 
 A Telegram bot designed to help users discover and explore a variety of cocktails. Whether you're looking for a random cocktail, searching by name, ingredient, or even by the first letter, this bot has you covered.
 
+![screenshot of mobile view cocktail finder telegram bot](images/screenshot.jpg)
+
 ## Features 🌟
 
 - Random cocktail generation
