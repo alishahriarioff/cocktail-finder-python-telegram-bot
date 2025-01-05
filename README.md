@@ -25,18 +25,21 @@ python-telegram-bot
 ## Setup Instructions
 
 1. Clone the repository:
+
    ```
    git clone <repository-url>
    cd python-telegram-bot
    ```
 
 2. Create a virtual environment:
+
    ```
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
 3. Install the required dependencies:
+
    ```
    pip install -r requirements.txt
    ```
@@ -49,6 +52,7 @@ python-telegram-bot
 ## Usage
 
 To run the bot, execute the following command:
+
 ```
 python src/bot.py
 ```
