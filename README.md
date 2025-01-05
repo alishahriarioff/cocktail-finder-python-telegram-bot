@@ -1,10 +1,24 @@
-# README.md
+# Cocktail Finder Python Telegram Bot 🎯
 
-# Python Telegram Bot
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![Telegram](https://img.shields.io/badge/Telegram-Bot-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-This project is a simple Telegram bot built using the `python-telegram-bot` library. It serves as a template for creating your own Telegram bots with customizable command handlers and utility functions.
+A Telegram bot designed to help users discover and explore a variety of cocktails. Whether you're looking for a random cocktail, searching by name, ingredient, or even by the first letter, this bot has you covered.
 
-## Project Structure
+## Features 🌟
+
+- Random cocktail generation
+- Search cocktails by name
+- Search cocktails by first letter
+- Search cocktails by ingredient
+- Search ingredients by name
+- Interactive keyboard interface
+- Emoji support
+- Error handling and logging
+- Environment variable configuration
+
+## Project Structure 🌟
 
 ```
 python-telegram-bot
@@ -14,49 +28,82 @@ python-telegram-bot
 │   │   └── commands.py      # Command handlers for the bot
 │   ├── config
 │   │   └── settings.py      # Configuration settings for the bot
-│   └── utils
-│       └── helpers.py       # Utility functions for the bot
+│   ├─── utils
+│   |  └── helpers.py       # Utility functions for the bot
+|   └─── services
+|      └── cocktail_service.py
 ├── requirements.txt          # Project dependencies
 ├── .env                      # Environment variables
 ├── .gitignore                # Git ignore file
 └── README.md                 # Project documentation
 ```
 
-## Setup Instructions
+## Setup Instructions 🛠️
 
-1. Clone the repository:
+1. Clone the repository and move to the directory
 
-   ```
-   git clone <repository-url>
-   cd python-telegram-bot
-   ```
-
-2. Create a virtual environment:
-
-   ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-
-3. Install the required dependencies:
-
-   ```
-   pip install -r requirements.txt
-   ```
-
-4. Create a `.env` file in the root directory and add your bot token:
-   ```
-   BOT_TOKEN=your_bot_token_here
-   ```
-
-## Usage
-
-To run the bot, execute the following command:
-
+```bash
+git clone https://github.com/yourusername/telegram-pickup-bot.git
+cd telegram-pickup-bot
 ```
+
+2. Create virtual environment and activate it
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Configure environment variables
+
+```bash
+copy .env.example .env
+# Edit .env with your Telegram Bot Token
+```
+
+## Usage 💡
+
+1. Start the bot
+
+```bash
 python src/bot.py
 ```
 
-## Contributing
+2. Available Commands
 
-Feel free to submit issues or pull requests to improve the bot or add new features.
+- `/start` - Initialize the bot
+- `/random` - Get a random cocktail
+- `/search` - Search for a cocktail by name
+- `/letter` - Search for cocktails by first letter
+- `/ingredient` - Search for cocktails by ingredient
+- `/find_ingredient` - Search for ingredients by name
+- `/help` - Display help
+- `/about` - Show bot information
+
+## Dependencies 📦
+
+- python-telegram-bot
+- python-dotenv
+- requests
+
+## Contributing 🤝
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License 📄
+
+Distributed under the MIT License. See LICENSE for more information.
+
+## Contact 📧
+
+Find me - `@alishahriarioff` - on every platform.
